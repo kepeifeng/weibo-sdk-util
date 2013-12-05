@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0475A5114DD8DF600A4F460 /* AbstractFifo.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759F214DD8DF600A4F460 /* AbstractFifo.cxx */; };
+		C0475A5214DD8DF600A4F460 /* AbstractFifo.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759F314DD8DF600A4F460 /* AbstractFifo.hxx */; settings = {ATTRIBUTES = (); }; };
+		C0475A5314DD8DF600A4F460 /* Fifo.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759F414DD8DF600A4F460 /* Fifo.hxx */; };
+		C0475A5414DD8DF600A4F460 /* StlUtil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759F514DD8DF600A4F460 /* StlUtil.cxx */; };
+		C0475A5514DD8DF600A4F460 /* StlUtil.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759F614DD8DF600A4F460 /* StlUtil.hxx */; };
+		C0475A5614DD8DF600A4F460 /* StringUtil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759F714DD8DF600A4F460 /* StringUtil.cxx */; };
+		C0475A5714DD8DF600A4F460 /* StringUtil.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759F814DD8DF600A4F460 /* StringUtil.hxx */; };
+		C0475A5814DD8DF600A4F460 /* TimeUtil.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759F914DD8DF600A4F460 /* TimeUtil.cxx */; };
+		C0475A5914DD8DF600A4F460 /* TimeUtil.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759FA14DD8DF600A4F460 /* TimeUtil.hxx */; };
+		C0475A5A14DD8DF600A4F460 /* compat.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759FB14DD8DF600A4F460 /* compat.hxx */; };
+		C0475A5B14DD8DF600A4F460 /* delegate.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759FD14DD8DF600A4F460 /* delegate.hxx */; };
+		C0475A5C14DD8DF600A4F460 /* delegateTemplate.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759FF14DD8DF600A4F460 /* delegateTemplate.hxx */; };
+		C0475A5D14DD8DF600A4F460 /* AddMachineEvent.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0114DD8DF600A4F460 /* AddMachineEvent.cxx */; };
+		C0475A5E14DD8DF600A4F460 /* AddMachineEvent.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0214DD8DF600A4F460 /* AddMachineEvent.hxx */; };
+		C0475A5F14DD8DF600A4F460 /* Event.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0314DD8DF600A4F460 /* Event.cxx */; };
+		C0475A6014DD8DF600A4F460 /* Event.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0414DD8DF600A4F460 /* Event.hxx */; };
+		C0475A6114DD8DF600A4F460 /* Machine.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0514DD8DF600A4F460 /* Machine.cxx */; };
+		C0475A6214DD8DF600A4F460 /* Machine.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0614DD8DF600A4F460 /* Machine.hxx */; };
+		C0475A6314DD8DF600A4F460 /* MachineSet.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0714DD8DF600A4F460 /* MachineSet.cxx */; };
+		C0475A6414DD8DF600A4F460 /* MachineSet.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0814DD8DF600A4F460 /* MachineSet.hxx */; };
+		C0475A6514DD8DF600A4F460 /* MachineSetHandler.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0914DD8DF600A4F460 /* MachineSetHandler.cxx */; };
+		C0475A6614DD8DF600A4F460 /* MachineSetHandler.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0A14DD8DF600A4F460 /* MachineSetHandler.hxx */; };
+		C0475A6714DD8DF600A4F460 /* MachineType.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0B14DD8DF600A4F460 /* MachineType.cxx */; };
+		C0475A6814DD8DF600A4F460 /* MachineType.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0C14DD8DF600A4F460 /* MachineType.hxx */; };
+		C0475A6914DD8DF600A4F460 /* State.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0D14DD8DF600A4F460 /* State.cxx */; };
+		C0475A6A14DD8DF600A4F460 /* State.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A0E14DD8DF600A4F460 /* State.hxx */; };
+		C0475A6B14DD8DF600A4F460 /* TimeoutEvent.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A0F14DD8DF600A4F460 /* TimeoutEvent.cxx */; };
+		C0475A6C14DD8DF600A4F460 /* TimeoutEvent.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1014DD8DF600A4F460 /* TimeoutEvent.hxx */; };
+		C0475A6D14DD8DF600A4F460 /* TimeoutPredicate.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1114DD8DF600A4F460 /* TimeoutPredicate.cxx */; };
+		C0475A6E14DD8DF600A4F460 /* TimeoutPredicate.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1214DD8DF600A4F460 /* TimeoutPredicate.hxx */; };
+		C0475A6F14DD8DF600A4F460 /* Transition.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1314DD8DF600A4F460 /* Transition.cxx */; };
+		C0475A7014DD8DF600A4F460 /* Transition.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1414DD8DF600A4F460 /* Transition.hxx */; };
+		C0475A7114DD8DF600A4F460 /* TransitionPredicate.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1514DD8DF600A4F460 /* TransitionPredicate.cxx */; };
+		C0475A7214DD8DF600A4F460 /* TransitionPredicate.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1614DD8DF600A4F460 /* TransitionPredicate.hxx */; };
+		C0475A7314DD8DF600A4F460 /* ExternalLogger.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1814DD8DF600A4F460 /* ExternalLogger.hxx */; };
+		C0475A7414DD8DF600A4F460 /* Log.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1914DD8DF600A4F460 /* Log.cxx */; };
+		C0475A7514DD8DF600A4F460 /* Log.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1A14DD8DF600A4F460 /* Log.hxx */; };
+		C0475A7614DD8DF600A4F460 /* Logger.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1B14DD8DF600A4F460 /* Logger.cxx */; };
+		C0475A7714DD8DF600A4F460 /* Logger.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1C14DD8DF600A4F460 /* Logger.hxx */; };
+		C0475A7814DD8DF600A4F460 /* Subsystem.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A1D14DD8DF600A4F460 /* Subsystem.cxx */; };
+		C0475A7914DD8DF600A4F460 /* Subsystem.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A1E14DD8DF600A4F460 /* Subsystem.hxx */; };
+		C0475A7A14DD8DF600A4F460 /* thread_policy.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A2014DD8DF600A4F460 /* thread_policy.hxx */; };
+		C0475A9514DD8DF600A4F460 /* Condition.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A4514DD8DF600A4F460 /* Condition.cxx */; };
+		C0475A9614DD8DF600A4F460 /* Condition.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4614DD8DF600A4F460 /* Condition.hxx */; };
+		C0475A9714DD8DF600A4F460 /* Lock.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A4714DD8DF600A4F460 /* Lock.cxx */; };
+		C0475A9814DD8DF600A4F460 /* Lock.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4814DD8DF600A4F460 /* Lock.hxx */; };
+		C0475A9914DD8DF600A4F460 /* Mutex.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A4914DD8DF600A4F460 /* Mutex.cxx */; };
+		C0475A9A14DD8DF600A4F460 /* Mutex.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4A14DD8DF600A4F460 /* Mutex.hxx */; };
+		C0475A9B14DD8DF600A4F460 /* RWMutex.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A4B14DD8DF600A4F460 /* RWMutex.cxx */; };
+		C0475A9C14DD8DF600A4F460 /* RWMutex.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4C14DD8DF600A4F460 /* RWMutex.hxx */; };
+		C0475A9D14DD8DF600A4F460 /* ThreadedData.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4D14DD8DF600A4F460 /* ThreadedData.hxx */; };
+		C0475A9E14DD8DF600A4F460 /* ThreadIf.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C0475A4E14DD8DF600A4F460 /* ThreadIf.cxx */; };
+		C0475A9F14DD8DF600A4F460 /* ThreadIf.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C0475A4F14DD8DF600A4F460 /* ThreadIf.hxx */; };
+		C0475AA014DD8DF600A4F460 /* util.h in Headers */ = {isa = PBXBuildFile; fileRef = C0475A5014DD8DF600A4F460 /* util.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C04759D414DD8D8C00A4F460 /* libutil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutil.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04759F214DD8DF600A4F460 /* AbstractFifo.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AbstractFifo.cxx; sourceTree = "<group>"; };
+		C04759F314DD8DF600A4F460 /* AbstractFifo.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AbstractFifo.hxx; sourceTree = "<group>"; };
+		C04759F414DD8DF600A4F460 /* Fifo.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Fifo.hxx; sourceTree = "<group>"; };
+		C04759F514DD8DF600A4F460 /* StlUtil.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StlUtil.cxx; sourceTree = "<group>"; };
+		C04759F614DD8DF600A4F460 /* StlUtil.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StlUtil.hxx; sourceTree = "<group>"; };
+		C04759F714DD8DF600A4F460 /* StringUtil.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtil.cxx; sourceTree = "<group>"; };
+		C04759F814DD8DF600A4F460 /* StringUtil.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StringUtil.hxx; sourceTree = "<group>"; };
+		C04759F914DD8DF600A4F460 /* TimeUtil.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeUtil.cxx; sourceTree = "<group>"; };
+		C04759FA14DD8DF600A4F460 /* TimeUtil.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimeUtil.hxx; sourceTree = "<group>"; };
+		C04759FB14DD8DF600A4F460 /* compat.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = compat.hxx; path = util/compat.hxx; sourceTree = "<group>"; };
+		C04759FD14DD8DF600A4F460 /* delegate.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = delegate.hxx; sourceTree = "<group>"; };
+		C04759FF14DD8DF600A4F460 /* delegateTemplate.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = delegateTemplate.hxx; sourceTree = "<group>"; };
+		C0475A0114DD8DF600A4F460 /* AddMachineEvent.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AddMachineEvent.cxx; sourceTree = "<group>"; };
+		C0475A0214DD8DF600A4F460 /* AddMachineEvent.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AddMachineEvent.hxx; sourceTree = "<group>"; };
+		C0475A0314DD8DF600A4F460 /* Event.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cxx; sourceTree = "<group>"; };
+		C0475A0414DD8DF600A4F460 /* Event.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hxx; sourceTree = "<group>"; };
+		C0475A0514DD8DF600A4F460 /* Machine.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Machine.cxx; sourceTree = "<group>"; };
+		C0475A0614DD8DF600A4F460 /* Machine.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Machine.hxx; sourceTree = "<group>"; };
+		C0475A0714DD8DF600A4F460 /* MachineSet.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachineSet.cxx; sourceTree = "<group>"; };
+		C0475A0814DD8DF600A4F460 /* MachineSet.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MachineSet.hxx; sourceTree = "<group>"; };
+		C0475A0914DD8DF600A4F460 /* MachineSetHandler.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachineSetHandler.cxx; sourceTree = "<group>"; };
+		C0475A0A14DD8DF600A4F460 /* MachineSetHandler.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MachineSetHandler.hxx; sourceTree = "<group>"; };
+		C0475A0B14DD8DF600A4F460 /* MachineType.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MachineType.cxx; sourceTree = "<group>"; };
+		C0475A0C14DD8DF600A4F460 /* MachineType.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MachineType.hxx; sourceTree = "<group>"; };
+		C0475A0D14DD8DF600A4F460 /* State.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cxx; sourceTree = "<group>"; };
+		C0475A0E14DD8DF600A4F460 /* State.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hxx; sourceTree = "<group>"; };
+		C0475A0F14DD8DF600A4F460 /* TimeoutEvent.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeoutEvent.cxx; sourceTree = "<group>"; };
+		C0475A1014DD8DF600A4F460 /* TimeoutEvent.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimeoutEvent.hxx; sourceTree = "<group>"; };
+		C0475A1114DD8DF600A4F460 /* TimeoutPredicate.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TimeoutPredicate.cxx; sourceTree = "<group>"; };
+		C0475A1214DD8DF600A4F460 /* TimeoutPredicate.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TimeoutPredicate.hxx; sourceTree = "<group>"; };
+		C0475A1314DD8DF600A4F460 /* Transition.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transition.cxx; sourceTree = "<group>"; };
+		C0475A1414DD8DF600A4F460 /* Transition.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Transition.hxx; sourceTree = "<group>"; };
+		C0475A1514DD8DF600A4F460 /* TransitionPredicate.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TransitionPredicate.cxx; sourceTree = "<group>"; };
+		C0475A1614DD8DF600A4F460 /* TransitionPredicate.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TransitionPredicate.hxx; sourceTree = "<group>"; };
+		C0475A1814DD8DF600A4F460 /* ExternalLogger.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ExternalLogger.hxx; sourceTree = "<group>"; };
+		C0475A1914DD8DF600A4F460 /* Log.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cxx; sourceTree = "<group>"; };
+		C0475A1A14DD8DF600A4F460 /* Log.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Log.hxx; sourceTree = "<group>"; };
+		C0475A1B14DD8DF600A4F460 /* Logger.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Logger.cxx; sourceTree = "<group>"; };
+		C0475A1C14DD8DF600A4F460 /* Logger.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Logger.hxx; sourceTree = "<group>"; };
+		C0475A1D14DD8DF600A4F460 /* Subsystem.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Subsystem.cxx; sourceTree = "<group>"; };
+		C0475A1E14DD8DF600A4F460 /* Subsystem.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Subsystem.hxx; sourceTree = "<group>"; };
+		C0475A2014DD8DF600A4F460 /* thread_policy.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = thread_policy.hxx; sourceTree = "<group>"; };
+		C0475A4514DD8DF600A4F460 /* Condition.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Condition.cxx; sourceTree = "<group>"; };
+		C0475A4614DD8DF600A4F460 /* Condition.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Condition.hxx; sourceTree = "<group>"; };
+		C0475A4714DD8DF600A4F460 /* Lock.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Lock.cxx; sourceTree = "<group>"; };
+		C0475A4814DD8DF600A4F460 /* Lock.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Lock.hxx; sourceTree = "<group>"; };
+		C0475A4914DD8DF600A4F460 /* Mutex.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mutex.cxx; sourceTree = "<group>"; };
+		C0475A4A14DD8DF600A4F460 /* Mutex.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Mutex.hxx; sourceTree = "<group>"; };
+		C0475A4B14DD8DF600A4F460 /* RWMutex.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RWMutex.cxx; sourceTree = "<group>"; };
+		C0475A4C14DD8DF600A4F460 /* RWMutex.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RWMutex.hxx; sourceTree = "<group>"; };
+		C0475A4D14DD8DF600A4F460 /* ThreadedData.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThreadedData.hxx; sourceTree = "<group>"; };
+		C0475A4E14DD8DF600A4F460 /* ThreadIf.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThreadIf.cxx; sourceTree = "<group>"; };
+		C0475A4F14DD8DF600A4F460 /* ThreadIf.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThreadIf.hxx; sourceTree = "<group>"; };
+		C0475A5014DD8DF600A4F460 /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = util/util.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C04759D114DD8D8C00A4F460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C04759C914DD8D8C00A4F460 = {
+			isa = PBXGroup;
+			children = (
+				C04759FB14DD8DF600A4F460 /* compat.hxx */,
+				C0475A5014DD8DF600A4F460 /* util.h */,
+				C04759F114DD8DF600A4F460 /* common */,
+				C04759FC14DD8DF600A4F460 /* delegate */,
+				C0475A0014DD8DF600A4F460 /* fsm */,
+				C0475A1714DD8DF600A4F460 /* log */,
+				C0475A1F14DD8DF600A4F460 /* policy */,
+				C0475A4414DD8DF600A4F460 /* threading */,
+				C04759D514DD8D8C00A4F460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C04759D514DD8D8C00A4F460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C04759D414DD8D8C00A4F460 /* libutil.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C04759F114DD8DF600A4F460 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				C04759F214DD8DF600A4F460 /* AbstractFifo.cxx */,
+				C04759F314DD8DF600A4F460 /* AbstractFifo.hxx */,
+				C04759F414DD8DF600A4F460 /* Fifo.hxx */,
+				C04759F514DD8DF600A4F460 /* StlUtil.cxx */,
+				C04759F614DD8DF600A4F460 /* StlUtil.hxx */,
+				C04759F714DD8DF600A4F460 /* StringUtil.cxx */,
+				C04759F814DD8DF600A4F460 /* StringUtil.hxx */,
+				C04759F914DD8DF600A4F460 /* TimeUtil.cxx */,
+				C04759FA14DD8DF600A4F460 /* TimeUtil.hxx */,
+			);
+			name = common;
+			path = util/common;
+			sourceTree = "<group>";
+		};
+		C04759FC14DD8DF600A4F460 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				C04759FD14DD8DF600A4F460 /* delegate.hxx */,
+				C04759FE14DD8DF600A4F460 /* internal */,
+			);
+			name = delegate;
+			path = util/delegate;
+			sourceTree = "<group>";
+		};
+		C04759FE14DD8DF600A4F460 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				C04759FF14DD8DF600A4F460 /* delegateTemplate.hxx */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		C0475A0014DD8DF600A4F460 /* fsm */ = {
+			isa = PBXGroup;
+			children = (
+				C0475A0114DD8DF600A4F460 /* AddMachineEvent.cxx */,
+				C0475A0214DD8DF600A4F460 /* AddMachineEvent.hxx */,
+				C0475A0314DD8DF600A4F460 /* Event.cxx */,
+				C0475A0414DD8DF600A4F460 /* Event.hxx */,
+				C0475A0514DD8DF600A4F460 /* Machine.cxx */,
+				C0475A0614DD8DF600A4F460 /* Machine.hxx */,
+				C0475A0714DD8DF600A4F460 /* MachineSet.cxx */,
+				C0475A0814DD8DF600A4F460 /* MachineSet.hxx */,
+				C0475A0914DD8DF600A4F460 /* MachineSetHandler.cxx */,
+				C0475A0A14DD8DF600A4F460 /* MachineSetHandler.hxx */,
+				C0475A0B14DD8DF600A4F460 /* MachineType.cxx */,
+				C0475A0C14DD8DF600A4F460 /* MachineType.hxx */,
+				C0475A0D14DD8DF600A4F460 /* State.cxx */,
+				C0475A0E14DD8DF600A4F460 /* State.hxx */,
+				C0475A0F14DD8DF600A4F460 /* TimeoutEvent.cxx */,
+				C0475A1014DD8DF600A4F460 /* TimeoutEvent.hxx */,
+				C0475A1114DD8DF600A4F460 /* TimeoutPredicate.cxx */,
+				C0475A1214DD8DF600A4F460 /* TimeoutPredicate.hxx */,
+				C0475A1314DD8DF600A4F460 /* Transition.cxx */,
+				C0475A1414DD8DF600A4F460 /* Transition.hxx */,
+				C0475A1514DD8DF600A4F460 /* TransitionPredicate.cxx */,
+				C0475A1614DD8DF600A4F460 /* TransitionPredicate.hxx */,
+			);
+			name = fsm;
+			path = util/fsm;
+			sourceTree = "<group>";
+		};
+		C0475A1714DD8DF600A4F460 /* log */ = {
+			isa = PBXGroup;
+			children = (
+				C0475A1814DD8DF600A4F460 /* ExternalLogger.hxx */,
+				C0475A1914DD8DF600A4F460 /* Log.cxx */,
+				C0475A1A14DD8DF600A4F460 /* Log.hxx */,
+				C0475A1B14DD8DF600A4F460 /* Logger.cxx */,
+				C0475A1C14DD8DF600A4F460 /* Logger.hxx */,
+				C0475A1D14DD8DF600A4F460 /* Subsystem.cxx */,
+				C0475A1E14DD8DF600A4F460 /* Subsystem.hxx */,
+			);
+			name = log;
+			path = util/log;
+			sourceTree = "<group>";
+		};
+		C0475A1F14DD8DF600A4F460 /* policy */ = {
+			isa = PBXGroup;
+			children = (
+				C0475A2014DD8DF600A4F460 /* thread_policy.hxx */,
+			);
+			name = policy;
+			path = util/policy;
+			sourceTree = "<group>";
+		};
+		C0475A4414DD8DF600A4F460 /* threading */ = {
+			isa = PBXGroup;
+			children = (
+				C0475A4514DD8DF600A4F460 /* Condition.cxx */,
+				C0475A4614DD8DF600A4F460 /* Condition.hxx */,
+				C0475A4714DD8DF600A4F460 /* Lock.cxx */,
+				C0475A4814DD8DF600A4F460 /* Lock.hxx */,
+				C0475A4914DD8DF600A4F460 /* Mutex.cxx */,
+				C0475A4A14DD8DF600A4F460 /* Mutex.hxx */,
+				C0475A4B14DD8DF600A4F460 /* RWMutex.cxx */,
+				C0475A4C14DD8DF600A4F460 /* RWMutex.hxx */,
+				C0475A4D14DD8DF600A4F460 /* ThreadedData.hxx */,
+				C0475A4E14DD8DF600A4F460 /* ThreadIf.cxx */,
+				C0475A4F14DD8DF600A4F460 /* ThreadIf.hxx */,
+			);
+			name = threading;
+			path = util/threading;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C04759D214DD8D8C00A4F460 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0475A5314DD8DF600A4F460 /* Fifo.hxx in Headers */,
+				C0475A5514DD8DF600A4F460 /* StlUtil.hxx in Headers */,
+				C0475A5714DD8DF600A4F460 /* StringUtil.hxx in Headers */,
+				C0475A5914DD8DF600A4F460 /* TimeUtil.hxx in Headers */,
+				C0475A5A14DD8DF600A4F460 /* compat.hxx in Headers */,
+				C0475A5214DD8DF600A4F460 /* AbstractFifo.hxx in Headers */,
+				C0475A5B14DD8DF600A4F460 /* delegate.hxx in Headers */,
+				C0475A5C14DD8DF600A4F460 /* delegateTemplate.hxx in Headers */,
+				C0475A5E14DD8DF600A4F460 /* AddMachineEvent.hxx in Headers */,
+				C0475A6014DD8DF600A4F460 /* Event.hxx in Headers */,
+				C0475A6214DD8DF600A4F460 /* Machine.hxx in Headers */,
+				C0475A6414DD8DF600A4F460 /* MachineSet.hxx in Headers */,
+				C0475A6614DD8DF600A4F460 /* MachineSetHandler.hxx in Headers */,
+				C0475A6814DD8DF600A4F460 /* MachineType.hxx in Headers */,
+				C0475A6A14DD8DF600A4F460 /* State.hxx in Headers */,
+				C0475A6C14DD8DF600A4F460 /* TimeoutEvent.hxx in Headers */,
+				C0475A6E14DD8DF600A4F460 /* TimeoutPredicate.hxx in Headers */,
+				C0475A7014DD8DF600A4F460 /* Transition.hxx in Headers */,
+				C0475A7214DD8DF600A4F460 /* TransitionPredicate.hxx in Headers */,
+				C0475A7314DD8DF600A4F460 /* ExternalLogger.hxx in Headers */,
+				C0475A7514DD8DF600A4F460 /* Log.hxx in Headers */,
+				C0475A7714DD8DF600A4F460 /* Logger.hxx in Headers */,
+				C0475A7914DD8DF600A4F460 /* Subsystem.hxx in Headers */,
+				C0475A7A14DD8DF600A4F460 /* thread_policy.hxx in Headers */,
+				C0475A9614DD8DF600A4F460 /* Condition.hxx in Headers */,
+				C0475A9814DD8DF600A4F460 /* Lock.hxx in Headers */,
+				C0475A9A14DD8DF600A4F460 /* Mutex.hxx in Headers */,
+				C0475A9C14DD8DF600A4F460 /* RWMutex.hxx in Headers */,
+				C0475A9D14DD8DF600A4F460 /* ThreadedData.hxx in Headers */,
+				C0475A9F14DD8DF600A4F460 /* ThreadIf.hxx in Headers */,
+				C0475AA014DD8DF600A4F460 /* util.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C04759D314DD8D8C00A4F460 /* util */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C04759E114DD8D8C00A4F460 /* Build configuration list for PBXNativeTarget "util" */;
+			buildPhases = (
+				C04759D014DD8D8C00A4F460 /* Sources */,
+				C04759D114DD8D8C00A4F460 /* Frameworks */,
+				C04759D214DD8D8C00A4F460 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = util;
+			productName = util;
+			productReference = C04759D414DD8D8C00A4F460 /* libutil.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C04759CB14DD8D8C00A4F460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C04759CE14DD8D8C00A4F460 /* Build configuration list for PBXProject "util" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C04759C914DD8D8C00A4F460;
+			productRefGroup = C04759D514DD8D8C00A4F460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C04759D314DD8D8C00A4F460 /* util */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C04759D014DD8D8C00A4F460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0475A5114DD8DF600A4F460 /* AbstractFifo.cxx in Sources */,
+				C0475A5414DD8DF600A4F460 /* StlUtil.cxx in Sources */,
+				C0475A5614DD8DF600A4F460 /* StringUtil.cxx in Sources */,
+				C0475A5814DD8DF600A4F460 /* TimeUtil.cxx in Sources */,
+				C0475A5D14DD8DF600A4F460 /* AddMachineEvent.cxx in Sources */,
+				C0475A5F14DD8DF600A4F460 /* Event.cxx in Sources */,
+				C0475A6114DD8DF600A4F460 /* Machine.cxx in Sources */,
+				C0475A6314DD8DF600A4F460 /* MachineSet.cxx in Sources */,
+				C0475A6514DD8DF600A4F460 /* MachineSetHandler.cxx in Sources */,
+				C0475A6714DD8DF600A4F460 /* MachineType.cxx in Sources */,
+				C0475A6914DD8DF600A4F460 /* State.cxx in Sources */,
+				C0475A6B14DD8DF600A4F460 /* TimeoutEvent.cxx in Sources */,
+				C0475A6D14DD8DF600A4F460 /* TimeoutPredicate.cxx in Sources */,
+				C0475A6F14DD8DF600A4F460 /* Transition.cxx in Sources */,
+				C0475A7114DD8DF600A4F460 /* TransitionPredicate.cxx in Sources */,
+				C0475A7414DD8DF600A4F460 /* Log.cxx in Sources */,
+				C0475A7614DD8DF600A4F460 /* Logger.cxx in Sources */,
+				C0475A7814DD8DF600A4F460 /* Subsystem.cxx in Sources */,
+				C0475A9514DD8DF600A4F460 /* Condition.cxx in Sources */,
+				C0475A9714DD8DF600A4F460 /* Lock.cxx in Sources */,
+				C0475A9914DD8DF600A4F460 /* Mutex.cxx in Sources */,
+				C0475A9B14DD8DF600A4F460 /* RWMutex.cxx in Sources */,
+				C0475A9E14DD8DF600A4F460 /* ThreadIf.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C04759DF14DD8D8C00A4F460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C04759E014DD8D8C00A4F460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C04759E214DD8D8C00A4F460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/../";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../include/libutil\"",
+				);
+				INSTALL_PATH = /lib/MacOS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\" \"$(SRCROOT)/../include\" \"$(SRCROOT)/../include/libutil\"";
+			};
+			name = Debug;
+		};
+		C04759E314DD8D8C00A4F460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/../";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = NDEBUG;
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/../include\"",
+					"\"$(SRCROOT)/../include/libutil\"",
+				);
+				INSTALL_PATH = /lib/MacOS;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+				USER_HEADER_SEARCH_PATHS = "\"$(SRCROOT)\" \"$(SRCROOT)/../include\" \"$(SRCROOT)/../include/libutil\"";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C04759CE14DD8D8C00A4F460 /* Build configuration list for PBXProject "util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04759DF14DD8D8C00A4F460 /* Debug */,
+				C04759E014DD8D8C00A4F460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C04759E114DD8D8C00A4F460 /* Build configuration list for PBXNativeTarget "util" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C04759E214DD8D8C00A4F460 /* Debug */,
+				C04759E314DD8D8C00A4F460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C04759CB14DD8D8C00A4F460 /* Project object */;
+}

@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04C154A1181A16DE00D7DF4C /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C154A0181A16DE00D7DF4C /* libcurl.dylib */; };
+		C04759A514DD8B8800A4F460 /* HttpCompat.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759A214DD8B8800A4F460 /* HttpCompat.hxx */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04759A614DD8B8800A4F460 /* IHttpEngine.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759A314DD8B8800A4F460 /* IHttpEngine.hxx */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04759A714DD8B8800A4F460 /* IHttpEngineCommon.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759A414DD8B8800A4F460 /* IHttpEngineCommon.hxx */; settings = {ATTRIBUTES = (Public, ); }; };
+		C04759BA14DD8BAB00A4F460 /* HashHelper.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759AB14DD8BAB00A4F460 /* HashHelper.cxx */; };
+		C04759BB14DD8BAB00A4F460 /* HashHelper.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759AC14DD8BAB00A4F460 /* HashHelper.hxx */; };
+		C04759BC14DD8BAB00A4F460 /* HEDriver.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759AD14DD8BAB00A4F460 /* HEDriver.cxx */; };
+		C04759BD14DD8BAB00A4F460 /* HEDriver.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759AE14DD8BAB00A4F460 /* HEDriver.hxx */; };
+		C04759BE14DD8BAB00A4F460 /* HEDriverCommand.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759AF14DD8BAB00A4F460 /* HEDriverCommand.cxx */; };
+		C04759BF14DD8BAB00A4F460 /* HEDriverCommand.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B014DD8BAB00A4F460 /* HEDriverCommand.hxx */; };
+		C04759C014DD8BAB00A4F460 /* HEEngineImpl.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759B114DD8BAB00A4F460 /* HEEngineImpl.cxx */; };
+		C04759C114DD8BAB00A4F460 /* HEEngineImpl.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B214DD8BAB00A4F460 /* HEEngineImpl.hxx */; };
+		C04759C214DD8BAB00A4F460 /* HESessionInfo.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759B314DD8BAB00A4F460 /* HESessionInfo.cxx */; };
+		C04759C314DD8BAB00A4F460 /* HESessionInfo.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B414DD8BAB00A4F460 /* HESessionInfo.hxx */; };
+		C04759C414DD8BAB00A4F460 /* HttpComDef.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B514DD8BAB00A4F460 /* HttpComDef.hxx */; };
+		C04759C514DD8BAB00A4F460 /* HttpEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C04759B614DD8BAB00A4F460 /* HttpEngine.cpp */; };
+		C04759C614DD8BAB00A4F460 /* HttpRequestInfo.cxx in Sources */ = {isa = PBXBuildFile; fileRef = C04759B714DD8BAB00A4F460 /* HttpRequestInfo.cxx */; };
+		C04759C714DD8BAB00A4F460 /* HttpRequestInfo.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B814DD8BAB00A4F460 /* HttpRequestInfo.hxx */; };
+		C04759C814DD8BAB00A4F460 /* IHEDriverCommand.hxx in Headers */ = {isa = PBXBuildFile; fileRef = C04759B914DD8BAB00A4F460 /* IHEDriverCommand.hxx */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		04C154A0181A16DE00D7DF4C /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libcurl.dylib; sourceTree = DEVELOPER_DIR; };
+		C047598F14DD8B1000A4F460 /* libHttpEngine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHttpEngine.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C04759A214DD8B8800A4F460 /* HttpCompat.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HttpCompat.hxx; path = include/HttpCompat.hxx; sourceTree = "<group>"; };
+		C04759A314DD8B8800A4F460 /* IHttpEngine.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IHttpEngine.hxx; path = include/IHttpEngine.hxx; sourceTree = "<group>"; };
+		C04759A414DD8B8800A4F460 /* IHttpEngineCommon.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IHttpEngineCommon.hxx; path = include/IHttpEngineCommon.hxx; sourceTree = "<group>"; };
+		C04759AB14DD8BAB00A4F460 /* HashHelper.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HashHelper.cxx; path = src/HashHelper.cxx; sourceTree = "<group>"; };
+		C04759AC14DD8BAB00A4F460 /* HashHelper.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HashHelper.hxx; path = src/HashHelper.hxx; sourceTree = "<group>"; };
+		C04759AD14DD8BAB00A4F460 /* HEDriver.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HEDriver.cxx; path = src/HEDriver.cxx; sourceTree = "<group>"; };
+		C04759AE14DD8BAB00A4F460 /* HEDriver.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HEDriver.hxx; path = src/HEDriver.hxx; sourceTree = "<group>"; };
+		C04759AF14DD8BAB00A4F460 /* HEDriverCommand.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HEDriverCommand.cxx; path = src/HEDriverCommand.cxx; sourceTree = "<group>"; };
+		C04759B014DD8BAB00A4F460 /* HEDriverCommand.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HEDriverCommand.hxx; path = src/HEDriverCommand.hxx; sourceTree = "<group>"; };
+		C04759B114DD8BAB00A4F460 /* HEEngineImpl.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HEEngineImpl.cxx; path = src/HEEngineImpl.cxx; sourceTree = "<group>"; };
+		C04759B214DD8BAB00A4F460 /* HEEngineImpl.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HEEngineImpl.hxx; path = src/HEEngineImpl.hxx; sourceTree = "<group>"; };
+		C04759B314DD8BAB00A4F460 /* HESessionInfo.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HESessionInfo.cxx; path = src/HESessionInfo.cxx; sourceTree = "<group>"; };
+		C04759B414DD8BAB00A4F460 /* HESessionInfo.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HESessionInfo.hxx; path = src/HESessionInfo.hxx; sourceTree = "<group>"; };
+		C04759B514DD8BAB00A4F460 /* HttpComDef.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HttpComDef.hxx; path = src/HttpComDef.hxx; sourceTree = "<group>"; };
+		C04759B614DD8BAB00A4F460 /* HttpEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HttpEngine.cpp; path = src/HttpEngine.cpp; sourceTree = "<group>"; };
+		C04759B714DD8BAB00A4F460 /* HttpRequestInfo.cxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HttpRequestInfo.cxx; path = src/HttpRequestInfo.cxx; sourceTree = "<group>"; };
+		C04759B814DD8BAB00A4F460 /* HttpRequestInfo.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = HttpRequestInfo.hxx; path = src/HttpRequestInfo.hxx; sourceTree = "<group>"; };
+		C04759B914DD8BAB00A4F460 /* IHEDriverCommand.hxx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = IHEDriverCommand.hxx; path = src/IHEDriverCommand.hxx; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C047598C14DD8B1000A4F460 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C154A1181A16DE00D7DF4C /* libcurl.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C047598414DD8B1000A4F460 = {
+			isa = PBXGroup;
+			children = (
+				04C154A0181A16DE00D7DF4C /* libcurl.dylib */,
+				C04759A914DD8B8D00A4F460 /* include */,
+				C04759AA14DD8B9C00A4F460 /* src */,
+				C047599014DD8B1000A4F460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C047599014DD8B1000A4F460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C047598F14DD8B1000A4F460 /* libHttpEngine.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C04759A914DD8B8D00A4F460 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C04759A214DD8B8800A4F460 /* HttpCompat.hxx */,
+				C04759A314DD8B8800A4F460 /* IHttpEngine.hxx */,
+				C04759A414DD8B8800A4F460 /* IHttpEngineCommon.hxx */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		C04759AA14DD8B9C00A4F460 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C04759AB14DD8BAB00A4F460 /* HashHelper.cxx */,
+				C04759AC14DD8BAB00A4F460 /* HashHelper.hxx */,
+				C04759AD14DD8BAB00A4F460 /* HEDriver.cxx */,
+				C04759AE14DD8BAB00A4F460 /* HEDriver.hxx */,
+				C04759AF14DD8BAB00A4F460 /* HEDriverCommand.cxx */,
+				C04759B014DD8BAB00A4F460 /* HEDriverCommand.hxx */,
+				C04759B114DD8BAB00A4F460 /* HEEngineImpl.cxx */,
+				C04759B214DD8BAB00A4F460 /* HEEngineImpl.hxx */,
+				C04759B314DD8BAB00A4F460 /* HESessionInfo.cxx */,
+				C04759B414DD8BAB00A4F460 /* HESessionInfo.hxx */,
+				C04759B514DD8BAB00A4F460 /* HttpComDef.hxx */,
+				C04759B614DD8BAB00A4F460 /* HttpEngine.cpp */,
+				C04759B714DD8BAB00A4F460 /* HttpRequestInfo.cxx */,
+				C04759B814DD8BAB00A4F460 /* HttpRequestInfo.hxx */,
+				C04759B914DD8BAB00A4F460 /* IHEDriverCommand.hxx */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C047598D14DD8B1000A4F460 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04759A514DD8B8800A4F460 /* HttpCompat.hxx in Headers */,
+				C04759A614DD8B8800A4F460 /* IHttpEngine.hxx in Headers */,
+				C04759A714DD8B8800A4F460 /* IHttpEngineCommon.hxx in Headers */,
+				C04759BB14DD8BAB00A4F460 /* HashHelper.hxx in Headers */,
+				C04759BD14DD8BAB00A4F460 /* HEDriver.hxx in Headers */,
+				C04759BF14DD8BAB00A4F460 /* HEDriverCommand.hxx in Headers */,
+				C04759C114DD8BAB00A4F460 /* HEEngineImpl.hxx in Headers */,
+				C04759C314DD8BAB00A4F460 /* HESessionInfo.hxx in Headers */,
+				C04759C414DD8BAB00A4F460 /* HttpComDef.hxx in Headers */,
+				C04759C714DD8BAB00A4F460 /* HttpRequestInfo.hxx in Headers */,
+				C04759C814DD8BAB00A4F460 /* IHEDriverCommand.hxx in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C047598E14DD8B1000A4F460 /* HttpEngine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C047599C14DD8B1000A4F460 /* Build configuration list for PBXNativeTarget "HttpEngine" */;
+			buildPhases = (
+				C047598B14DD8B1000A4F460 /* Sources */,
+				C047598C14DD8B1000A4F460 /* Frameworks */,
+				C047598D14DD8B1000A4F460 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HttpEngine;
+			productName = HttpEngine;
+			productReference = C047598F14DD8B1000A4F460 /* libHttpEngine.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C047598614DD8B1000A4F460 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = C047598914DD8B1000A4F460 /* Build configuration list for PBXProject "HttpEngine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C047598414DD8B1000A4F460;
+			productRefGroup = C047599014DD8B1000A4F460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C047598E14DD8B1000A4F460 /* HttpEngine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C047598B14DD8B1000A4F460 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04759BA14DD8BAB00A4F460 /* HashHelper.cxx in Sources */,
+				C04759BC14DD8BAB00A4F460 /* HEDriver.cxx in Sources */,
+				C04759BE14DD8BAB00A4F460 /* HEDriverCommand.cxx in Sources */,
+				C04759C014DD8BAB00A4F460 /* HEEngineImpl.cxx in Sources */,
+				C04759C214DD8BAB00A4F460 /* HESessionInfo.cxx in Sources */,
+				C04759C514DD8BAB00A4F460 /* HttpEngine.cpp in Sources */,
+				C04759C614DD8BAB00A4F460 /* HttpRequestInfo.cxx in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C047599A14DD8B1000A4F460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C047599B14DD8B1000A4F460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C047599D14DD8B1000A4F460 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/../";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					HAVE_SYS_SOCKET_H,
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../include/libutil",
+					"$(SRCROOT)/../Common",
+				);
+				INSTALL_PATH = /lib/MacOS;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include/HttpEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C047599E14DD8B1000A4F460 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(SRCROOT)/../";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					HAVE_SYS_SOCKET_H,
+				);
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)",
+					"$(SRCROOT)/../include",
+					"$(SRCROOT)/../include/libutil",
+					"$(SRCROOT)/../Common",
+				);
+				INSTALL_PATH = /lib/MacOS;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "-ObjC";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = /include/HttpEngine;
+				SDKROOT = macosx;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C047598914DD8B1000A4F460 /* Build configuration list for PBXProject "HttpEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C047599A14DD8B1000A4F460 /* Debug */,
+				C047599B14DD8B1000A4F460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C047599C14DD8B1000A4F460 /* Build configuration list for PBXNativeTarget "HttpEngine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C047599D14DD8B1000A4F460 /* Debug */,
+				C047599E14DD8B1000A4F460 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C047598614DD8B1000A4F460 /* Project object */;
+}

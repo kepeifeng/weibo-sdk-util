@@ -1,0 +1,74 @@
+// testFsm.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <util/fsm/Machine.hxx>
+#include <util/fsm/MachineSet.hxx>
+#include <util/fsm/Transition.hxx>
+#include <boost/shared_ptr.hpp>
+#include "ImMachine.hxx"
+#include "ImActionEvent.hxx"
+
+void ready_im_send(Util::MachineBase& machine,
+							const Util::ITransition& transition,
+							const Util::Event* event)
+{
+	std::cout << "ready_im_send" << std::endl;
+}
+void ready_im_send_failed(Util::MachineBase& machine,
+				   const Util::ITransition& transition,
+				   const Util::Event* event)
+{
+	std::cout << "ready_im_send_failed" << std::endl;
+}
+void ready_im_sent(Util::MachineBase& machine,
+				   const Util::ITransition& transition,
+				   const Util::Event* event)
+{
+	std::cout << "ready_im_sent" << std::endl;
+}
+void ready_im_received(Util::MachineBase& machine,
+				   const Util::ITransition& transition,
+				   const Util::Event* event)
+{
+	std::cout << "ready_im_received" << std::endl;
+}
+
+int _tmain(int argc, _TCHAR* argv[])
+{
+	boost::shared_ptr<Testor::ImMachine> imMachinePtr(new Testor::ImMachine());
+	imMachinePtr->imSendAction.OnAction = ready_im_send;
+	imMachinePtr->imSentAction.OnAction = ready_im_sent;
+	imMachinePtr->imReceivedAction.OnAction = ready_im_received;
+ 	imMachinePtr->imSendFailedAction.OnAction = ready_im_send_failed;
+
+	boost::shared_ptr<Util::MachineSet> machineSetPtr(new Util::MachineSet());
+	machineSetPtr->addMachine(imMachinePtr.get());
+	
+
+	machineSetPtr->enqueue(new Testor::ImActionEvent(Testor::ImActionEvent::im_send, *imMachinePtr));
+    _gettchar();
+	machineSetPtr->process();
+
+	machineSetPtr->enqueue(new Testor::ImActionEvent(Testor::ImActionEvent::im_send_failed, *imMachinePtr));
+	_gettchar();
+	machineSetPtr->process();
+
+	machineSetPtr->enqueue(new Testor::ImActionEvent(Testor::ImActionEvent::im_sent, *imMachinePtr));
+	_gettchar();
+	machineSetPtr->process();
+
+	machineSetPtr->enqueue(new Testor::ImActionEvent(Testor::ImActionEvent::im_received, *imMachinePtr));
+	_gettchar();
+	machineSetPtr->process();
+	_gettchar();
+
+	imMachinePtr->imSendAction.clearActions();
+	imMachinePtr->imSentAction.clearActions();
+	imMachinePtr->imReceivedAction.clearActions();
+	imMachinePtr->imSendFailedAction.clearActions();
+
+	machineSetPtr->removeMachine(imMachinePtr.get());
+	return 0;
+}
+
